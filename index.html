@@ -66,7 +66,22 @@ document.onmouseup = mousehandler;
           <div class="cc-profile-image"><a href="#"><img src="images/anthony.jpg" alt="Image"/></a></div>
           <div class="h2 title">Srinivasa Rao Kolla</div>
           <p class="category text-white">Php Developer</p><a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Hire Me</a>
-		  <a class="btn btn-primary" href="images/resume.jpg" target="_blank"  data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Download CV</a>
+		  <a href="#" class="btn btn-primary" onclick="downloadCV(event)" data-aos="zoom-in">
+    Download CV
+</a>
+
+<script>
+function downloadCV(e) {
+    e.preventDefault(); // prevent page jump
+
+    const link = document.createElement('a');
+    link.href = 'images/cv.pdf'; // correct path
+    link.download = 'cv.pdf';   // file name only
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+</script>
         </div>
       </div>
       <div class="section">
@@ -131,7 +146,7 @@ document.onmouseup = mousehandler;
           <div class="card-body">
             <div class="h4 mt-0 title">About</div>
             <p>Hello! I am Srinivasa Rao Kolla. Php Developer</p>
-            <p>6+ years of experience in analysis, design, development, maintenance, and deployment of web-based applications on Windows and Linux environments. Strong expertise in PHP frameworks, database-driven applications, and production support with hands-on experience in ticket-based maintenance projects. </p> <a href="https://bookmytemplate.com/">Ref:bookmytemplate</a>
+            <p style="text-align: justify;">Results-driven Senior PHP Developer with over 8 years of experience in designing, developing, and optimizing scalable web applications. Specialized in MVC architecture and modern PHP frameworks including CodeIgniter, Laravel, and Yii. Proven expertise in database design, performance tuning, production deployment, and enterprise-level application development. Experienced in modernizing legacy systems and collaborating with cross-functional teams to deliver secure and high-performance solutions.. </p> <a href="https://bookmytemplate.com/">Ref:bookmytemplate</a>
           </div>
         </div>
         <div class="col-lg-6 col-md-12">
@@ -358,14 +373,20 @@ document.onmouseup = mousehandler;
       <div class="row">
         <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body cc-experience-header">
-            <p>December 2021 - Present</p>
-            <div class="h5">Bookmytemplate</div>
+            <p>July 2025 – December 2025</p>
+            <div class="h5">Garrett Motion (Remote)</div>
           </div>
         </div>
         <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body">
-            <div class="h5">Php Developer</div>
-            <p>Handled daily ticket allocation and issue analysis, performed browser-level debugging to identify and implement required code changes, validated fixes, and deployed updates from development to production environments while collaborating with team members to finalize solutions. Installed and configured CodeIgniter across development, staging, and testing environments, designed dynamic and cross-browser compatible web pages, developed frontend interfaces using HTML, CSS, JavaScript, jQuery, and Bootstrap, and maintained and enhanced existing PHP-based applications.</p>
+            <div class="h5">Senior PHP Web Developer</div>
+            <p style="text-align: justify;">•	Led end-to-end development, maintenance, and deployment of PHP-based enterprise web applications.
+•	Managed CodeIgniter environments across Development, Staging, and Production.
+•	Resolved complex production issues and optimized system performance.
+•	Implemented secure coding standards and improved deployment workflows.
+•	Developed responsive UI modules using modern frontend technologies.
+•	Collaborated with stakeholders to translate business requirements into scalable solutions.
+</p>
           </div>
         </div>
       </div>
@@ -374,14 +395,19 @@ document.onmouseup = mousehandler;
       <div class="row">
         <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body cc-experience-header">
-            <p>October 2019 - October 2020</p>
-            <div class="h5">Xervon Industries LLC (UAE)</div>
+            <p>December 2021 – June 2025</p>
+            <div class="h5">BookMyTemplate (Remote)</div>
           </div>
         </div>
         <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body">
-            <div class="h5">Php Developer</div>
-            <p>Designed, tested, and implemented PHP and MySQL applications to support multiple departments, automated manual processes to improve operational efficiency, worked extensively with MVC-based frameworks such as CodeIgniter and Laravel, and enhanced legacy PHP code to improve performance and reduce user effort.</p>
+            <div class="h5">Senior PHP Web Developer </div>
+            <p style="text-align: justify;">•	Designed and deployed enterprise-grade PHP & MySQL applications.
+•	Automated operational processes, reducing manual effort and processing time.
+•	Developed MVC-based applications using CodeIgniter and Laravel.
+•	Refactored legacy systems to enhance performance and maintainability.
+•	Provided production support ensuring system stability and uptime.
+</p>
           </div>
         </div>
       </div>
@@ -390,14 +416,41 @@ document.onmouseup = mousehandler;
       <div class="row">
         <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body cc-experience-header">
-            <p>November 2020 - November 2021</p>
-            <div class="h5">Al Otaiba Transport(UAE)</div>
+            <p>Oct 2019 – December 2021</p>
+            <div class="h5">Adnoc - UAE</div>
           </div>
         </div>
         <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body">
-            <div class="h5">Web Developer</div>
-            <p>Designed, tested, and implemented PHP and MySQL applications to support multiple departments, automated manual processes to improve operational efficiency, worked extensively with MVC-based frameworks such as CodeIgniter and Laravel, and enhanced legacy PHP code to improve performance and reduce user effort.</p>
+            <div class="h5">Web Developer </div>
+            <p style="text-align: justify;">•	Installed and configured CodeIgniter across development, staging, and testing environments.
+•	Developed dynamic and cross-browser compatible web pages using HTML, CSS, JavaScript, AJAX, and jQuery.
+•	Worked with PHP 7, MySQL, HTML5, CSS3, and WordPress on Linux and Windows platforms.
+•	Managed MySQL database administration using phpMyAdmin.
+•	Built scalable web modules and improved existing application functionality.
+</p>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+	 <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-experience-header">
+            <p>Sept 2017 –  Aug 2019</p>
+            <div class="h5">Freelancer - UAE </div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5">PHP Developer </div>
+            <p style="text-align: justify;">•	Developed custom web applications using PHP and MySQL.
+•	Designed and implemented custom CMS systems using CodeIgniter, WordPress
+•	Built applications using MVC architecture with CodeIgniter and Laravel.
+•	Enhanced legacy PHP systems developed by previous teams, improving performance and usability.
+
+</p>
           </div>
         </div>
       </div>
